@@ -1,0 +1,179 @@
+.cards {
+    padding: 20px 0;
+}
+
+.cards-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 0.3px solid $color-gray;
+    border-radius: 16px;
+    overflow: hidden;
+
+    &__new {
+        position: absolute;
+        top: 41px;
+        left: 0;
+        min-width: 99px;
+        padding: 8px 17px;
+        text-align: center;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 20px;
+        color: $color-mineshaft;
+
+        &--one {
+            background-color: $color-cerulean;
+        }
+
+        &--two {
+            background-color: $color-mustard;
+        }    
+    }
+
+    &__picture {
+        width: 100%;
+        height: 220px;
+        vertical-align: bottom;
+        object-fit: cover;
+    }
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        padding: 12px 12px 19px;
+    }
+
+    &__time {
+        display: inline-block;
+        margin-bottom: 10px;
+        padding-left: 25px;
+        font-size: 12px;
+        line-height: 20px;
+        background-image: url('../../img/block-time.svg');
+        background-size: 16px 16px;
+        background-position: left center;
+        background-repeat: no-repeat;
+        color: $color-silverchalice;
+    }
+
+    &__title {
+        margin: 0;
+        margin-bottom: 27px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 22px;
+        color: $color-tundora;
+    }
+
+    &__list {
+       margin-bottom: 37px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        padding-left: 36px;
+        font-size: 14px;
+        line-height: 20px;
+        background-image: url('../../img/ok.svg');
+        background-size: 16px 12px;
+        background-position: left 3px;
+        background-repeat: no-repeat;
+        color: $color-tundora;
+    } 
+
+    &__item:not(:last-child) {
+        margin-bottom: 13px;
+    }
+
+    &__descr {
+        display: block;
+        margin-bottom: 7px;
+    }
+
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__block-time {
+        min-width: 63px;
+        min-height: 24px;
+        padding: 2px 13px;
+        margin-bottom: 7px;
+        border-radius: 11px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 20px;
+        background-color: $color-pattensblue;
+        color: $color-shaft;
+        transition: background-color .3s ease-in-out;
+        cursor: pointer;
+    }
+
+    &__block-time:not(:last-child) {
+        margin-right: 7px;
+    }
+
+    &__block-time:hover {
+        background-color: $color-perano;
+    }
+
+    &__btn {
+        min-width: 63px;
+        margin-bottom: 7px;
+        border-radius: 11px;
+        text-align: center;
+        background-color: $color-pattensblue;
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    &__box-price {
+        display: flex;
+        flex-direction: column;
+        margin-right: 5px;
+    }
+
+    &__price {
+        margin-bottom: 4px;
+        font-size: 30px;
+        line-height: 20px;
+        color: $color-black;
+    }
+
+    &__pier-price {
+        font-size: 10px;
+        line-height: 20px;
+        color: $color-black;
+    }
+
+    &__link {
+        display: block;
+        min-width: 165px;
+        padding: 11px 41px;
+        border: 0.5px solid $color-buddhagold;
+        border-radius: 20px;
+        font-size: 14px;
+        line-height: 20px;
+        background-color: $color-mustard;
+        color: $color-tundora;
+    }
+}
+
+.cards-item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.active-time {
+    background-color: $color-malibu;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    color: $color-white;
+}

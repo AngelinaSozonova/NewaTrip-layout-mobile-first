@@ -1,0 +1,11 @@
+@media (min-width: 1024px) {
+    .cards-item {
+        &__picture {
+            max-width: 473px;
+        }
+
+        &__item {
+            flex-direction: row;
+        }
+    }  
+}
